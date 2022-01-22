@@ -69,7 +69,7 @@
 }
 
 .header__main-illustration{
-  
+
   position: absolute;
 
   bottom: 0px;
@@ -100,4 +100,65 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.description{
+  background-color: #f2f2f2;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center; /*вложенный элемент  two-columns будет по центру;*/
+  border: 2px solid green;
+}
+
+.two-columns{
+  display: flex; /*flex-direction: row; по умолчанию*/
+  /*flex-direction: row; /*эленты внутри brief и main-text представляются как колонки*/
+  width: 80%; /*занимает 80% ширини родителя description*/
+  /*justify-content: space-between; /*эленты внутри brief и main-text разЬдутся по разныим стооронам  */
+  justify-content: space-between;
+  position: relative;
+  border: 2px solid black;
+}
+
+.two-columns__brief{
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: blue;
+  border: 2px solid red;
+}
+
+
+.two-columns__main-text{
+  margin: 0px;
+  width: 80%;
+}
+
+.two-columns__paragraph{
+  flex-direction: column;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  border: 2px solid red;
+}
+
+
+.two-columns__paragraph_margin{
+ margin-bottom: 30px;
+}
+
+.two-columns__paragraph_span-accent{
+  font-weight: bold;
+}
+
+
+
+
+/*.two-columns__papagraph:not(:last-child){
+  margin-bottom: 30px;
+  width: 80px;
+};*/
+
+.footer{
 }
