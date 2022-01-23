@@ -1,5 +1,5 @@
 
-a, p, h1, h2, h3, ul {
+a, p, h1, h2, h3, h4, ul {
   margin: 0;
   padding: 0;
 }
@@ -157,14 +157,19 @@ a, p, h1, h2, h3, ul {
     margin-bottom: 0px;
   }
 
-
+  /*.table__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+  }*/
 
 /*digits*/
 .digits {
-  display: block;
+  display: flex;
   margin-top: 100px;
   margin-bottom: 100px;
-  border: 2px solid red;
+  flex-direction: column;
 }
 
 .section-title{
@@ -190,22 +195,27 @@ a, p, h1, h2, h3, ul {
 }
 
 .table{
-  text-align: center;
-  width: 1100px;
-  margin: 0 auto;
-  border: 2px solid red;
-}
 
-/*.table__row{
-  display: flex;
-  flex-direction: row;
+  width: 1100px;
+  display: flex;  /*все что является  дочерним эдементом ставится в одну строку*/
+  flex-wrap: wrap; /*для переноса*/
+  list-style: none;
+  padding: 0px;
+  margin: 0 auto;
   justify-content: space-between;
-  margin-top: 60px;
-}*/
+  padding-inline-start: 0px;
+}
 
 .table__cell{
   text-align: start;
   width: 250px;
+  margin-top:60px;
+
+  padding: 0px;
+  margin-top: 60px;
+  margin-left: 0;
+  margin-right: 0;
+  ma
 }
 
 .table__heading{
@@ -226,18 +236,21 @@ a, p, h1, h2, h3, ul {
   margin-top: 20px;
 }
 
+.table__heading h4{
+margin-block-start: 0;
+margin-block-end: 0;
+}
 /*feynman*/
 
 .feynman{
   margin-top: 100px;
   height: 890px;
-  border: 2px solid green;
-
   position: relative;
 
   background-image: url('../images/feynman.png');
   background-repeat: no-repeat;
   background-position: left bottom;
+  background-color: #f2f2f2;
 }
 
 
@@ -261,28 +274,32 @@ a, p, h1, h2, h3, ul {
 }
 
 .feynman__link{
+  position: absolute;
+  right: 0px; /*прижать к правому краю*/
+  bottom: 0px; /*прижать к низу краю*/
+  height: 50%;;
+
   text-decoration: none;
 
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
-
-  position: absolute;
-  right: 0px; /*прижать к правому краю*/
-  bottom: 0px; /*прижать к низу краю*/
-  height: 50%;;
 }
 
 /*kaufman*/
 .kaufman{
   display: flex;
   flex-direction: column;
-  margin-top: 90px;
+  /*margin-top: 90px;*/
+  padding-top: 90px;
   margin-bottom: 90px;
-  border: 2px solid green;
   overflow: hidden; /*чтобы ге  выходил за границы сейкции*/
   position: relative;
-  background-color: black;
+  background-color: #1f1f1f;
+}
+
+
+.section-subtitle__theme_dark, .section-title__theme_dark{
   color: white;
 }
 
@@ -290,16 +307,11 @@ a, p, h1, h2, h3, ul {
   z-index: 1;
 }
 
-.table__row_theme_dark{
- margin-top: 80px;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
-}
 
 .table__cell_theme_dark{
 width: 200px;
 color: white;
+margin-top: 80px;
 }
 
 .table__heading_theme_dark{
