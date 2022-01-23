@@ -109,11 +109,10 @@ a, p, h1, h2, h3, ul {
 }
 
 .description{
-  background-color: #f2f2f2;
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: center; /*вложенный элемент  two-columns будет по центру;*/
-  border: 2px solid green;
 }
 
 .two-columns{
@@ -123,8 +122,8 @@ a, p, h1, h2, h3, ul {
   /*justify-content: space-between; /*эленты внутри brief и main-text разЬдутся по разныим стооронам  */
   justify-content: space-between;
   position: relative;
-  border: 2px solid black;
 }
+
 
 .two-columns__brief{
   width: 175px;
@@ -132,7 +131,6 @@ a, p, h1, h2, h3, ul {
   font-size: 18px;
   font-weight: normal;
   color: blue;
-  border: 2px solid red;
 }
 
 
@@ -141,18 +139,14 @@ a, p, h1, h2, h3, ul {
   width: 80%;
 }
 
-.two-columns__paragraph{
-  flex-direction: column;
+.two-columns__paragraph {
+  display: inline-block;  /*flex-direction: column;*/
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  border: 2px solid red;
+  margin-bottom: 30px;
 }
 
-
-.two-columns__paragraph_margin{
- margin-bottom: 30px;
-}
 
 .two-columns__paragraph_span-accent{
   font-weight: bold;
@@ -160,13 +154,78 @@ a, p, h1, h2, h3, ul {
 
 
 
+  .two-columns__main-text :last-child {
+    margin-bottom: 0px;
+  }
 
 
 
-/*.two-columns__papagraph:not(:last-child){
-  margin-bottom: 30px;
-  width: 80px;
-};*/
+/*digits*/
+.digits {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section-title{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.section-subtitle{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+
+  margin-top: 20px;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 24px;
+
+}
+
+.table{
+  text-align: center;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.table__row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.table__cell{
+  text-align: start;
+  width: 250px;
+}
+
+.table__heading{
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+
+.table__text {
+
+}
+
+.table__text p {
+  margin-top: 20px;
+
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+
 
 .footer{
 }
