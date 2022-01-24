@@ -1,17 +1,13 @@
 
-a, p, h1, h2, h3, h4, ul {
+a, p, h1, h2, h3, h4, ul, li {
   margin: 0;
   padding: 0;
 }
 
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -19,33 +15,24 @@ a, p, h1, h2, h3, h4, ul {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   background-color: #f2f2f2;
   position: relative;
   display: flex;
-
-  /* костыль для прижатия  картиток  к  правому краю
-  align-items:flex-end;
-  justify-content: flex-end;*/
-
+}
+.logo{
+    width: 183px;
 }
 
-/*+*/
 .logo_place_header{
-  width: 183px;
   height: 32px;
   position: absolute;
-  /*или padding-left: 64px */
   left: 64px;
   top: 30px;
   z-index: 1;
 }
 
-/*+*/
-/*родительский .header поэтому  вариванивнивание  по центру */
 .header__title{
    position: absolute;
-   /*left: 64px;*/
    padding-left: 64px;
    width: 730px;
    margin: 0;
@@ -83,15 +70,14 @@ a, p, h1, h2, h3, h4, ul {
   width: 765px;
   height: 608px;
   z-index: 1;
-  margin-left: auto; /*сместить к правому краю*/
+  margin-left: auto;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
   background-color:#2f80ed;
-  margin-left: auto; /*сместить к правому краю*/
+  margin-left: auto;
   z-index: 0;
   display: flex;
   position: absolute;
@@ -100,7 +86,6 @@ a, p, h1, h2, h3, h4, ul {
   top: 64px;
 }
 
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -112,14 +97,12 @@ a, p, h1, h2, h3, h4, ul {
   margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
-  justify-content: center; /*вложенный элемент  two-columns будет по центру;*/
+  justify-content: center;
 }
 
 .two-columns{
-  display: flex; /*flex-direction: row; по умолчанию*/
-  /*flex-direction: row; /*эленты внутри brief и main-text представляются как колонки*/
-  width: 80%; /*занимает 80% ширини родителя description*/
-  /*justify-content: space-between; /*эленты внутри brief и main-text разЬдутся по разныим стооронам  */
+  display: flex;
+  width: 80%;
   justify-content: space-between;
   position: relative;
 }
@@ -139,7 +122,7 @@ a, p, h1, h2, h3, h4, ul {
 }
 
 .two-columns__paragraph {
-  display: inline-block;  /*flex-direction: column;*/
+  display: inline-block;
   margin-bottom: 30px;
 
   line-height: 34px;
@@ -157,14 +140,7 @@ a, p, h1, h2, h3, h4, ul {
     margin-bottom: 0px;
   }
 
-  /*.table__row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 60px;
-  }*/
 
-/*digits*/
 .digits {
   display: flex;
   margin-top: 100px;
@@ -197,8 +173,8 @@ a, p, h1, h2, h3, h4, ul {
 .table{
 
   width: 1100px;
-  display: flex;  /*все что является  дочерним эдементом ставится в одну строку*/
-  flex-wrap: wrap; /*для переноса*/
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0px;
   margin: 0 auto;
@@ -239,7 +215,7 @@ a, p, h1, h2, h3, h4, ul {
 margin-block-start: 0;
 margin-block-end: 0;
 }
-/*feynman*/
+
 
 .feynman{
   margin-top: 100px;
@@ -255,7 +231,7 @@ margin-block-end: 0;
 
 .feynman__title{
   width: 648px;
-  margin: 0 auto; /*занять центарльное положение  по ширине  продителя*/
+  margin: 0 auto;
 
   text-align: center;
   font-size: 120px;
@@ -274,8 +250,8 @@ margin-block-end: 0;
 
 .feynman__link{
   position: absolute;
-  right: 0px; /*прижать к правому краю*/
-  bottom: 0px; /*прижать к низу краю*/
+  right: 0px;
+  bottom: 0px;
   height: 50%;;
 
   text-decoration: none;
@@ -285,14 +261,13 @@ margin-block-end: 0;
   font-weight: normal;
 }
 
-/*kaufman*/
+
 .kaufman{
   display: flex;
   flex-direction: column;
-  /*margin-top: 90px;*/
   padding-top: 90px;
   padding-bottom: 90px;
-  overflow: hidden; /*чтобы ге  выходил за границы сейкции*/
+  overflow: hidden;
   position: relative;
   background-color: #1f1f1f;
 }
@@ -324,7 +299,7 @@ color: white;
 .kaufman__trianle{
   height: 877px;
   width: 877px;
-  margin-left: auto; /*сместить к правому краю*/
+  margin-left: auto;
   z-index: 0;
   display: flex;
   position: absolute;
@@ -335,41 +310,83 @@ color: white;
 
 
 .footer{
-  height: 350px;
   background-color: #1f1f1f;
   color: white;
   padding-top: 60px;
   padding-bottom: 40px;
+  min-height: 350px;
 }
 
 
-.flex-row
+.footer__columns
 {
+  width: 90%;
   display: flex;
-  width: 90%;     /*занять 90% родителя*/
-  height: 100%;
-  margin: auto;  /*выровнять по цетрку  родителя*/
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+  margin: 0 auto;
   justify-content: space-between;
+  padding-inline-start: 0px;
 }
 
-.footer__columns {
+.footer__columns_copiright {
   display: flex;
-  width: 50%;
+  width: 711px;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid green;
+}
+
+
+.footer__columns_info {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer__columns_social {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo_place_footer {
-  width: 183px;
   height: 35px;
 }
 
+.footer__columns_author{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-.footer__content_copiright{
+
+.footer__content_copiright {
   padding-top: 18px;
   padding-bottom: 18px;
 }
 
-.footer__content_info{
+.footer__columns_heading{
+  margin-bottom: 20px;
+
+  line-height: 30px;
+  font-size: 18px;
+  font-family: bold;
+}
+
+
+.footer__columns_link{
+  margin-bottom: 16px;
+
+  line-height: 30px;
+  font-size: 18px;
+  font-family: normal;
+  text-decoration: none;
+  color: white;
+}
+
+.footter__social-icon{
+  width: 16px;
+  height: 16px;
+  margin-right:10px;
 }
