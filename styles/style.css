@@ -120,6 +120,7 @@ a, p, h1, h2, h3, h4, ul, li {
 .two-columns__main-text{
   margin: 0px;
   width: 80%;
+  min-width: 784px;
 }
 
 .two-columns__paragraph {
