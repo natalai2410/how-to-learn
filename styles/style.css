@@ -19,6 +19,7 @@ a, p, h1, h2, h3, h4, ul, li {
   position: relative;
   display: flex;
 }
+
 .logo{
     width: 183px;
 }
