@@ -1,0 +1,17 @@
+@keyframes rotation{
+    from{
+    transform: rotate(0);
+    }
+  
+    to {
+    transform: rotate(360deg);
+    }
+  }
+
+  .rotate{
+    /*animation-duration: 5s; /*длительность анимации во времени за один цикл.*/
+    /*animation-name: rotation; /*Имя кейфрейма*/
+    /*animation-iteration-count: infinite; /*Анимация повторяется бесконечно.*/
+    /*animation-direction: normal; /*когда анимация заканчивается, она сразу сбрасывается в начальное положение и снова проигрывается*/
+    animation: rotation 30s linear infinite normal;
+ }
