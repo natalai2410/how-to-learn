@@ -4,20 +4,3 @@
     margin: 0 auto;
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
-.logo{
-    width: 183px;
-    height: 32px;
-}
-
-.logo_place_header{
-    position: absolute;
-    left: 64px;
-    top: 30px;
-    z-index: 1;
-}
-
-.logo_place_footer{
-    height: 35px;
-}
-

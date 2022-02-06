@@ -9,17 +9,6 @@
     background-size: 867px 637px;
 }
 
-.feynman__subtitle{
-    margin: 0px;
-    padding: 0px;
-    margin-top: 70px;
-    text-align: center;
-    font-size: 36px;
-    line-height: 51px;
-    font-weight: normal;
-    padding-top: 0px;
-}
-
 .feynman__link{
     margin: 0px;
     padding: 0px;
@@ -32,4 +21,9 @@
     line-height: 51px;
     font-weight: normal;
     color: #2f80ed;
+    transition: opacity 1s ease;
 }
+
+.feynman__link:hover{
+    opacity: 0.25; 
+ }
