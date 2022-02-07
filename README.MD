@@ -2,7 +2,7 @@
 
 # How to learn
 
-## Проектная  работа являющаяся результатом 2 и 3 спринта
+## Проектная  работа являющаяся результатом 2 и 3 спринта на Я.Практикум
 
 
 ## Боли и страдания!!!
@@ -15,4 +15,9 @@
 
 * 1 Ссылки
 * 2 Еще больше анимации
-* 3 Лунапарк с блэкджеком и...
+* 3 Лунапарк с блэкджеком и ...медиазапросами =)
+
+## Полезные сссылки
+* 1 Анимация: https://css-tricks.com/css-animation-tricks/
+* 2 Keyframe: https://drafts.csswg.org/css-animations-1/#at-ruledef-keyframes
+* 3 Доступно и понятно: https://www.youtube.com/channel/UCedskVwIKiZJsO8XdJdLKnA
