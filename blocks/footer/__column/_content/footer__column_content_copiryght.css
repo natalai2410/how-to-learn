@@ -1,0 +1,6 @@
+.footer__column_content_copiryght{
+    display: flex;
+    width: 711px;
+    flex-direction: column;
+    justify-content:space-between;
+}

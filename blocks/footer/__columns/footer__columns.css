@@ -1,0 +1,12 @@
+.footer__columns{
+    width: 90%;
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding-inline-start: 0px;
+    justify-content: space-between;
+}
+
