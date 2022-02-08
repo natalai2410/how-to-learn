@@ -1,0 +1,16 @@
+.khan__bye-link {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: normal;
+    color: #2f80ed;
+    transition: opacity 1s ease;
+    height: 40px;
+    width: auto;
+}
+
+.khan__bye_link:hover{
+    opacity: 0.25; 
+ }

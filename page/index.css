@@ -56,9 +56,9 @@
 @import url(../blocks/oakley/oakley.css);
 @import url(../blocks/khan/khan.css);
 @import url(../blocks/khan/__author/khan__author.css);
-@import url(../blocks/khan/__book_piс/khan__book-piс.css);
+@import url(../blocks/khan/__book-piс/khan__book-piс.css);
 @import url(../blocks/khan/__book-container/khan__book-container.css);
-@import url(../blocks/khan/__bye_link/khan__bye-link.css);
+@import url(../blocks/khan/__bye-link/khan__bye-link.css);
 @import url(../blocks/khan/__container/khan__container.css);
 @import url(../blocks/khan/__quote/khan__quote.css);
 @import url(../blocks/khan/__quote-author-subline/khan__quote-author-subline.css);
