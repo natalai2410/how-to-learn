@@ -5,4 +5,11 @@
     height: 38px;
     align-items: center;
     justify-content: center;
+    opacity: 1;
+    transition: opacity 1s ease;
 }
+
+.resources__logo:hover{
+    opacity: 0.25;
+}
+

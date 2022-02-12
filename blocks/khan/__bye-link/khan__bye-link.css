@@ -6,11 +6,14 @@
     line-height: 42px;
     font-weight: normal;
     color: #2f80ed;
-    transition: opacity 1s ease;
     height: 40px;
     width: auto;
+    opacity: 1;
+    transition: opacity 1s ease;
+ }
+
+ .khan__bye-link:hover{    
+    opacity: 0.25; 
 }
 
-.khan__bye_link:hover{
-    opacity: 0.25; 
- }
+ 
